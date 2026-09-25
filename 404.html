@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sayfa yok · Projeler</title>
+<meta name="robots" content="noindex">
+<style>
+:root {
+  --bg: #f5f6f8;
+  --ink: #12161c;
+  --muted: #5b6472;
+  --signal: #14532d;
+  --serif: ui-serif, Georgia, "Times New Roman", serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.wrap { width: 100%; max-width: 640px; margin: 0 auto; padding: 56px 24px; }
+.eyebrow {
+  margin: 0 0 18px;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--signal);
+}
+h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(30px, 5vw, 44px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+p.lede { margin: 16px 0 0; color: var(--muted); }
+p.back { margin: 34px 0 0; }
+a {
+  font-weight: 600;
+  color: var(--signal);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+a:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">404</p>
+  <h1>Bu sayfa yok</h1>
+  <p class="lede">Aradığınız proje sayfası taşınmış olabilir.</p>
+  <p class="back"><a href="https://softwaremonkey635.github.io/hub/">Projeler sayfasına dön</a></p>
+</div>
+</body>
+</html>

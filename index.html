@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projeler · softwaremonkey635</title>
+<meta name="description" content="Kocaeli'de geliştirdiğim web araçları: MenüYap, MahalleCoop ve Kocaeli Social Hub.">
+<meta property="og:title" content="Projeler · softwaremonkey635">
+<meta property="og:description" content="Üç canlı proje: MenüYap, MahalleCoop, Kocaeli Social Hub.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta name="theme-color" content="#f5f6f8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%2314532d'/%3E%3Ctext%20x='32'%20y='46'%20font-size='40'%20font-family='Georgia,serif'%20font-weight='700'%20fill='%23ffffff'%20text-anchor='middle'%3Es%3C/text%3E%3C/svg%3E">
 <style>
 :root {
   --bg: #f5f6f8;
@@ -21,6 +28,9 @@
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--body);
@@ -36,6 +46,10 @@ a:focus-visible {
 }
 a.primary:focus-visible { outline-color: var(--signal-deep); }
 .wrap {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   max-width: 1120px;
   margin: 0 auto;
   padding: 56px 24px 40px;
@@ -68,6 +82,7 @@ h1 {
   grid-template-columns: 1fr;
   gap: 20px;
   margin-top: 44px;
+  margin-bottom: 44px;
   list-style: none;
   padding: 0;
 }
@@ -119,10 +134,16 @@ a.secondary {
   font-family: var(--mono);
   font-size: 13px;
   color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--rule);
 }
-a.secondary:hover { color: var(--signal-deep); }
+a.secondary:hover {
+  color: var(--signal-deep);
+  text-decoration-color: currentColor;
+}
 footer {
-  margin-top: 44px;
+  margin-top: auto;
   padding-top: 20px;
   border-top: 1px solid var(--rule);
   display: flex;
@@ -170,7 +191,7 @@ footer p { margin: 0; }
       <h2>Kocaeli Social Hub</h2>
       <p class="desc">Kocaeli'de gençlik ve canlı etkinlik topluluğu.</p>
       <p class="actions">
-        <a class="primary" href="https://github.com/softwaremonkey635/kocaeli-social-hub">Siteyi aç</a>
+        <a class="primary" href="https://softwaremonkey635.github.io/kocaeli-social-hub/">Siteyi aç</a>
         <a class="secondary" href="https://github.com/softwaremonkey635/kocaeli-social-hub">Kaynak</a>
       </p>
     </li>
